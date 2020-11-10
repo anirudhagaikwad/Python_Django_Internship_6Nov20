@@ -25,7 +25,7 @@ git config --global credential.github.com.useHttpPath true
 3) provide your username, password once again for each repo when you are prompted for your credentials - this is the last time you need to do that
 
 
-https://github.com/anirudhagaikwad/Python_Django_7Nov20.git
+https://github.com/anirudhagaikwad/Python_Django_Internship_6Nov20.git
 	
 
 
