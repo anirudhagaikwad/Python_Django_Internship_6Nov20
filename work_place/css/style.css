@@ -1,0 +1,30 @@
+/* # element selector */
+
+p{
+    color: brown;
+    width: 200px;
+    border: 2px solid;
+    text-align: center;
+}
+
+
+/* # id selector */
+
+#p{
+    color: green;
+    text-align: justify;
+    text-shadow: indigo;
+    font-size: large;
+    border: 5px solid;
+}
+
+
+/* # class selector */
+
+.p{
+    color:maroon;
+    text-align: center;
+    text-shadow: indigo;
+    font-size: large;
+    border: 15px solid;
+}
