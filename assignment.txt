@@ -1,0 +1,9 @@
+1) Create Webpage which have two buttons
+-as per your creativity apply style to this buttons style to this buttons
+-when user click button 1 then it redirect to admission  form page(you can refer admission form filed from this link https://schooldemoerp.herokuapp.com/getadmission )
+-when user click button 2 then it display aleart message
+
+2) Create profile.html, which is elaborate your skills
+-decorate this page as per your creativity
+
+3) Create repository 'assignment2' on your github account and upload all assignments on it
