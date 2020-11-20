@@ -1,0 +1,5 @@
+1)Use adminLte templates components and create informative website for (SSC,HSC)coaching classes 
+
+2) In above website build one admission form for take online admission
+
+
