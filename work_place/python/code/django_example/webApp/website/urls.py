@@ -19,5 +19,7 @@ from website import views
 
 urlpatterns = [
     path('',views.home_page,name="index_page" ),
+    path('myform',views.home_form,name="my_form" ),
+    path('contactform',views.contact,name="contact_form" ),
    
 ]

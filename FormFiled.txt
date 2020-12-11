@@ -1,0 +1,42 @@
+
+Built-in Field classes
+
+    BooleanField
+    CharField
+    ChoiceField
+    TypedChoiceField
+    DateField
+    DateTimeField
+    DecimalField
+    DurationField
+    EmailField
+    FileField
+    FilePathField
+    FloatField
+    ImageField
+    IntegerField
+    JSONField
+    GenericIPAddressField
+    MultipleChoiceField
+    TypedMultipleChoiceField
+    NullBooleanField
+    RegexField
+    SlugField
+    TimeField
+    URLField
+    UUIDField
+	
+	
+Core field arguments
+
+    required
+    label
+    label_suffix
+    initial
+    widget
+    help_text
+    error_messages
+    validators
+    localize
+    disabled	
+

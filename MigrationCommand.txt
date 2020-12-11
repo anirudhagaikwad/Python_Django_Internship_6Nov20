@@ -1,0 +1,14 @@
+0) open Terminal
+
+1) activate virtual env
+
+2) switch to manage.py file location
+
+3) Enter command
+--> python manage.py makemigrations
+
+4) Enter Command
+--> python manage.py sqlmigrate appName versionNumber
+
+5) Enter Command
+--> python manage.py migrate

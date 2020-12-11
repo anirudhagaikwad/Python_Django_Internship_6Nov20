@@ -1,0 +1,14 @@
+{% extends "layout/web_base_layout.html" %}
+{% load static %}
+{% block title %}MyForm|{{my}}{% endblock %}
+
+
+{% block content %}
+
+
+<P><h1>hello django Form</h1></P>
+
+{{mform.as_table}}
+
+
+{% endblock %}
