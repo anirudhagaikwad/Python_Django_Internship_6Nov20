@@ -1,0 +1,7 @@
+build one django project(MyProj) and create django app (MyApp), in that app create following pages and stored admission enquiry data in database
+
+1)Use adminLte templates components and create informative website for (SSC,HSC)coaching classes 
+
+2)In above website build one admission form for take online admission enquiry 
+
+

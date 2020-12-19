@@ -22,7 +22,7 @@
             </div>
             
             <form enctype="multipart/form-data" method="POST">
-             
+              {% csrf_token %}
             <div class="card-body">
               <div class="row">
                
@@ -32,7 +32,7 @@
                 <div class="form-group">
                  
                   
-                    {{contactForm.name|as_crispy_field }}
+                    {{form.name|as_crispy_field }}
 
 
                 </div>
@@ -42,7 +42,7 @@
                 <div class="form-group">
                  
                   
-                    {{contactForm.gender|as_crispy_field }}
+                    {{form.gender|as_crispy_field }}
 
 
                 </div>
@@ -52,7 +52,7 @@
                 <div class="form-group">
                  
                   
-                    {{contactForm.email|as_crispy_field }}
+                    {{form.email|as_crispy_field }}
 
 
                 </div>
@@ -63,7 +63,7 @@
                 <div class="form-group">
                  
                   
-                    {{contactForm.mobile|as_crispy_field }}
+                    {{form.mobile|as_crispy_field }}
 
 
                 </div>
@@ -75,7 +75,7 @@
                 <div class="form-group">
                  
                   
-                    {{contactForm.message|as_crispy_field }}
+                    {{form.message|as_crispy_field }}
 
 
                 </div>

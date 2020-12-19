@@ -11,7 +11,7 @@ class MyForm(forms.Form):
     mobile=forms.CharField(widget=forms.TextInput(attrs={'title': "Enter employee first name",'placeholder': "employee mobile"}),label="Mobile",max_length=10,min_length=4,empty_value=False,required=True)     
 
 class ContactForm(forms.Form):
-    name=forms.CharField(widget=forms.TextInput(attrs={'title':"Enter Your Name",'placeholder':"Your Name"}),label="Name",empty_value=False,required=True)   
+    name=forms.CharField(widget=forms.TextInput(attrs={'title':"Enter Your Name",'placeholder':"Your Name"}),label="Name",empty_value=False,required=True,max_length=10,min_length=4)   
     gender=forms.ChoiceField(widget=forms.Select(attrs={'title':"Enter Your Gender",'placeholder':"Your Gender"}),label="Gender",choices=GEN,required=True)   
     email=forms.CharField(widget=forms.EmailInput(attrs={'title':"Enter Your Email",'placeholder':"Your Email"}),label="Email",empty_value=False,required=True) 
     mobile=forms.CharField(widget=forms.NumberInput(attrs={'title':"Enter Your Mobile",'placeholder':"Your Mobile"}),label="Mobile",empty_value=False,required=True)  
