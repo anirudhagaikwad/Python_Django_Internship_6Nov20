@@ -1,0 +1,58 @@
+####### Python Dynamic Content Feeding through Admin ##########
+
+0) To Check Help
+~ python manage.py help
+
+1) Install PostgreSql and install Driver
+~ pip install psycopg2-binary or pip install mysqlclient
+
+--> set following setting in setting.py
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'databaseName',
+        'USER': 'DB_User',
+        'PASSWORD': 'DB_Password',
+        'HOST': 'localhost',
+    }
+}
+
+2)Set app config in settings.py
+
+INSTALLED_APPS = [
+    'app1.apps.App1Config',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+
+3) Make Migrations
+~  python manage.py makemigrations
+
+4) create tables from models in SQL
+~ python manage.py sqlmigrate appname version
+Ex--> python manage.py sqlmigrate website 0001
+
+5)Migrate all SQL in DBMS
+~ python manage.py migrate
+
+6)Create Super user for Admin Login
+~python manage.py createsuperuser
+--> it will ask username,email and password
+
+7)Register Your Models in "admin.py"
+--> admin.site.register(ModelClassName)
+
+8)If you want to display data on HTML then use Template Tag on HTML page
+
+9)login with superuser 
+--> http://127.0.0.1/admin
+
+10) Feed data as per model
+
+
+11) Visit html Page

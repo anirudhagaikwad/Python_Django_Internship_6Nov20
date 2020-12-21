@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from website.forms import MyForm,ContactForm
-from website.models import ContactInfo,IntroImg,PortProd2,PortProd3,PortProd1
+from website.models import ContactInfo,IntroImg,PortProd2,PortProd3,PortProd1,Servi
 from django.http import HttpResponse
 
 
@@ -11,7 +11,8 @@ def index_page(request):
     p1=PortProd1.objects.all()
     p2=PortProd2.objects.all()
     p3=PortProd3.objects.all()
-    context={"intimg":intro,"product1":p1,"product2":p2,"product3":p3}
+    serv=Servi.objects.all()
+    context={"heroimg":intro,"product1":p1,"product2":p2,"product3":p3,"services":serv}
     return render(request,"index.html",context)
 
 

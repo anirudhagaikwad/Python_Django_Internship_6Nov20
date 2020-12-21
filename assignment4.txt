@@ -1,0 +1,7 @@
+build one django project(MyWebsite) and create django app (MyWebApp), in that app create single page website to display information about you or your work
+
+1)Use django admin for feed data
+
+
+
+
