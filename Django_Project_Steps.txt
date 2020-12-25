@@ -1,0 +1,120 @@
+# How to Start Django Project from Scratch #
+
+1) Open Terminal(if windows- CMD) 
+
+2) Activate Virtual Envirounment
+
+3) Type following command to creae Django Project
+>  django-admin startproject projName(JanAadhar)
+
+4) Switch to lacation where "manage.py" file avilable in project
+ 
+5)Type following command to creae Django App
+> python manage.py startapp appName(JanApp)
+
+6) Create "templates" folder at root location where "manage.py" file avilable
+
+7) Create "staticfiles" folder at root location where "manage.py" file avilable
+
+8) Create "media" folder at root location where "manage.py" file avilable
+
+9)set "settings.py"
+--> import os
+    from django.contrib.messages import constants as messages
+
+    INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'JanApp.apps.JanappConfig',
+    'crispy_forms',
+    ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+    
+    TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.1/howto/static-files/
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR,'staticfiles/')
+]
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
+
+COMPANY_NAME="Jan Aadhar"
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_COOKIE_AGE = 60*10 # set just 10 minutes to test
+SESSION_SAVE_EVERY_REQUEST = True
+
+
+
+10) Open JanAadhar "urls.py" and insert following code
+-->  from django.urls import path,include
+     from django.conf import settings
+     from django.conf.urls.static import static
+
+     urlpatterns = [
+    path('',include('JanApp.urls')),
+    path('admin/', admin.site.urls),
+]+ static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+11)extend JanApp and create file "urls.py" 
+
+12) Copy "dist" and "plugins" folders from adminlte to JanAadhar/staticfiles/assets folder
+
+13) Create Templates Layout
+--> create "layout/admin_base_layout.html"
+--> create "layout/login_base_layout.html"
+
+--> create "janviews/login.html"
+
+14) write function in JanApp "views.py" 
+
+15) Map URL in JanApp "urls.py"
+
+
+----- Done Basic Settings for Project -----
+
+
+
+
+
+
+
+
+
+
+
