@@ -106,8 +106,11 @@ SESSION_SAVE_EVERY_REQUEST = True
 15) Map URL in JanApp "urls.py"
 
 
+16) Use Migration Commands before run project
+
 ----- Done Basic Settings for Project -----
 
+pip install xlwt
 
 
 
