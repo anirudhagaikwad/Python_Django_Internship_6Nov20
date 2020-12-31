@@ -1,13 +1,14 @@
 #A Django app, which can easily be deployed to Heroku.
 
-#Before starting heroku hosting your system should contain git installed on your system
+
 
 0. virtual environment is activated.
 
+#Before starting heroku hosting your system should contain git installed on your system
 1. if not then goto this site, download and install it.
 -> https://git-scm.com/download/
 
-2.run this commands on command prompt(compulsory)
+2.run this commands on command prompt(mandatory)
 -> pip install gunicorn
    pip install django-heroku
 
